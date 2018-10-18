@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FaceBook</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<script type="text/javascript" src="script.js"></script>
+
+	<!-- <form>
+		Username:<br>
+		<input type="text" name="userid"><br>
+		Password:<br>
+		<input type="password" name="pswrd"><br>
+		<br>
+		<input type="button" onclick="check(this.form)" value="Login">
+		<br>
+		<hr>
+		Register Username:<br>
+		<input type="text" name="ruser" placeholder="username"><br>
+		Register Password:<br>
+		<input type="password" name="rpswrd"><br>
+		<input type="button" onclick ="register(this.form)" value="Register">
+	</form> -->
+
+<div class="login-page">
+	<div class="form">
+	
+	<!-- Login -->
+	
+			<form class="login-form">
+				<input type="text" name="userid" placeholder="Username">
+				<input type="password" name="pswrd" placeholder="Password">
+				<button onclick="check(this.form)">
+					Login
+				</button>
+				<p class="message">Not Registered? <a href="#">Create an account</a></p>
+			</form>
+
+		 	<!-- register -->
+		 	<form class="register-form">
+	      	<input type="text" name ="ruser"placeholder="Name"/>
+	     	 <input type="password"
+	     	 name="rpswrd" placeholder="Password"/>
+	     	 <input type="text" placeholder="email address"/>
+	     	 <input type="button" onclick="register(this.form)" class="btn" value="Create">
+	      	<p class="message">Already registered? <a href="#">Sign In</a></p>
+	   	 </form>
+		</div>
+	</div>
+		
+	<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+
+	<script type="text/javascript">
+		$('.message a').click(function(){
+   		$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+		});
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
